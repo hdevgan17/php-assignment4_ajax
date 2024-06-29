@@ -1,0 +1,83 @@
+<!-------w------------
+
+    Assignment 4
+    Name: Harshdeep Devgam
+    Date: 28 June, 2024
+    Description: Form to fetch election results of Winnipeg election of 1966 from Winnipeg Open Data API
+--------------------->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Election Results</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <header>
+                <h1 class="title">Winnipeg Election Results</h1>
+                <h2 class="subtitle">Comprehensive archive of the City of Winnipeg election results going back to 1966.
+                    The results are shown for Mayor, Councillor, and School Trustees where the data is available.
+                </h2>
+            </header>
+            <br>
+            <div class="search_section">
+                <form class="box" action="">
+                    <div class="field is-horizontal">
+                        <div class="field-label is-normal">
+                            <h3><label class="label" for="candidate">Search for a Candidate in the Election of 1966</label></h3>
+                        </div>
+                        <div class="field-body">
+                            <div class="field">
+                                <div class="control is-expanded">
+                                    <input class="input" type="text" name="candidate" id="candidate">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="control">
+                                    <button class="button is-primary" type="submit">Search</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <p class="help">
+                            Try searching for <a class="query" href="#Chris BROUGHTON">Chris Broughton</a>,
+                            or <a class="query" href="#Alicia BECKER">Alicia Becker</a>,
+                            or <a class="query" href="#Vicki REMPEL">Vicki Rempel</a>.
+                        </p>
+                    </div>
+                </form>
+                <br>
+            </div>
+            <h2 class="explanation subtitle"></h2>
+            <br>
+            <table class="table is-fullwidth is-hoverable candidates">
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Candidate</th>
+                        <th>Position</th>
+                        <th>Votes</th>
+                        <th>Won</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <br>
+            <p>
+                Election data provided by the <a href="https://data.winnipeg.ca/">City of Winnipeg Open Data
+                    catalogue</a>.
+            </p>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
